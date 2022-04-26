@@ -1,0 +1,51 @@
+#main-head{
+    height: calc(100vh - 54px);
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2017/01/18/1074877/e056fe1f38239ed1f17fab77fb6f489d-700.jpg");
+    background-size: cover;
+}
+
+.page-section{
+    padding: 6rem 0;
+}
+
+.section-heading{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-subheading{
+    margin-bottom: 4rem;
+}
+
+.grow:hover{
+    animation-name: grow;
+    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+}
+
+.bounce{
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes bounce{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 5px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+@keyframes grow{
+    100%{
+        transform: scale(1.05);
+    }
+}
